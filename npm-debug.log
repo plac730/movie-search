@@ -1,0 +1,100 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.7.3/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.7.3/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'bodyparser' ]
+2 info using npm@2.15.11
+3 info using node@v4.7.3
+4 verbose install initial load of /home/ubuntu/workspace/apis/moviesearch/package.json
+5 warn package.json moviesearch@1.0.0 No description
+6 warn package.json moviesearch@1.0.0 No repository field.
+7 warn package.json moviesearch@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/apis/moviesearch/node_modules/ejs/package.json
+9 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/apis/moviesearch/node_modules/express/package.json
+10 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/apis/moviesearch/node_modules/request/package.json
+11 verbose readDependencies loading dependencies from /home/ubuntu/workspace/apis/moviesearch/package.json
+12 silly cache add args [ 'bodyparser', null ]
+13 verbose cache add spec bodyparser
+14 silly cache add parsed spec Result {
+14 silly cache add   raw: 'bodyparser',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'bodyparser',
+14 silly cache add   rawSpec: '',
+14 silly cache add   spec: 'latest',
+14 silly cache add   type: 'tag' }
+15 silly addNamed bodyparser@latest
+16 verbose addNamed "latest" is being treated as a dist-tag for bodyparser
+17 info addNameTag [ 'bodyparser', 'latest' ]
+18 silly mapToRegistry name bodyparser
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry data Result {
+21 silly mapToRegistry   raw: 'bodyparser',
+21 silly mapToRegistry   scope: null,
+21 silly mapToRegistry   name: 'bodyparser',
+21 silly mapToRegistry   rawSpec: '',
+21 silly mapToRegistry   spec: 'latest',
+21 silly mapToRegistry   type: 'tag' }
+22 silly mapToRegistry uri https://registry.npmjs.org/bodyparser
+23 verbose addNameTag registry:https://registry.npmjs.org/bodyparser not in flight; fetching
+24 verbose request uri https://registry.npmjs.org/bodyparser
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 1:35:06 PM
+27 verbose request id 9d873391432b4b6f
+28 http request GET https://registry.npmjs.org/bodyparser
+29 http 404 https://registry.npmjs.org/bodyparser
+30 verbose headers { 'content-type': 'application/json',
+30 verbose headers   'cache-control': 'max-age=0',
+30 verbose headers   'content-length': '2',
+30 verbose headers   'accept-ranges': 'bytes',
+30 verbose headers   date: 'Thu, 13 Apr 2017 13:35:07 GMT',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   age: '0',
+30 verbose headers   connection: 'keep-alive',
+30 verbose headers   'x-served-by': 'cache-ord1723-ORD',
+30 verbose headers   'x-cache': 'MISS',
+30 verbose headers   'x-cache-hits': '0',
+30 verbose headers   'x-timer': 'S1492090507.968579,VS0,VE61',
+30 verbose headers   vary: 'Accept-Encoding' }
+31 silly get cb [ 404,
+31 silly get   { 'content-type': 'application/json',
+31 silly get     'cache-control': 'max-age=0',
+31 silly get     'content-length': '2',
+31 silly get     'accept-ranges': 'bytes',
+31 silly get     date: 'Thu, 13 Apr 2017 13:35:07 GMT',
+31 silly get     via: '1.1 varnish',
+31 silly get     age: '0',
+31 silly get     connection: 'keep-alive',
+31 silly get     'x-served-by': 'cache-ord1723-ORD',
+31 silly get     'x-cache': 'MISS',
+31 silly get     'x-cache-hits': '0',
+31 silly get     'x-timer': 'S1492090507.968579,VS0,VE61',
+31 silly get     vary: 'Accept-Encoding' } ]
+32 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/bodyparser
+32 verbose stack     at makeError (/home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+32 verbose stack     at CachingRegistryClient.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:280:14)
+32 verbose stack     at Request._callback (/home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+32 verbose stack     at Request.self.callback (/home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/node_modules/request/request.js:187:22)
+32 verbose stack     at emitTwo (events.js:87:13)
+32 verbose stack     at Request.emit (events.js:172:7)
+32 verbose stack     at Request.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+32 verbose stack     at emitOne (events.js:77:13)
+32 verbose stack     at Request.emit (events.js:169:7)
+32 verbose stack     at IncomingMessage.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/node_modules/request/request.js:965:12)
+33 verbose statusCode 404
+34 verbose pkgid bodyparser
+35 verbose cwd /home/ubuntu/workspace/apis/moviesearch
+36 error Linux 4.9.17-c9
+37 error argv "/home/ubuntu/.nvm/versions/node/v4.7.3/bin/node" "/home/ubuntu/.nvm/versions/node/v4.7.3/bin/npm" "install" "bodyparser"
+38 error node v4.7.3
+39 error npm  v2.15.11
+40 error code E404
+41 error 404 Registry returned 404 for GET on https://registry.npmjs.org/bodyparser
+41 error 404
+41 error 404 'bodyparser' is not in the npm registry.
+41 error 404 You should bug the author to publish it (or use the name yourself!)
+41 error 404 It was specified as a dependency of 'moviesearch'
+41 error 404
+41 error 404 Note that you can also install from a
+41 error 404 tarball, folder, http url, or git url.
+42 verbose exit [ 1, true ]

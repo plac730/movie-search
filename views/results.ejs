@@ -1,0 +1,13 @@
+<h1 style="text-align:center">Movie Search Results</h1>
+<div>
+    <% results.Search.forEach(function(movie){ %>
+    
+    <li style="list-style-type: none; display: inline-block; padding: 10px 30px;"><p><%= movie.Title %> - <%= movie.Year %></p>
+    <% if (movie.Poster != "N/A") { %>
+        <img src= <%= movie.Poster %> > </li>
+    <% } %>
+<% }) %>
+</div>
+
+
+<a href="/">Back to Search Page</a>
