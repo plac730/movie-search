@@ -1,8 +1,8 @@
-<h1 style="text-align:center; padding: 20px">Movie Search Results</h1>
+<h1 style="text-align:center; padding: 20px; font-size: 3rem">Movie Search Results</h1>
 <div>
     <% results.Search.forEach(function(movie){ %>
     
-    <li style="list-style-type: none; display: inline-block; padding: 10px 30px;"><p><%= movie.Title %> - <%= movie.Year %></p>
+    <li style="list-style-type: none; display: inline-block; padding: 10px 30px; font-size: 1.5rem"><p><%= movie.Title %> - <%= movie.Year %></p>
     <% if (movie.Poster != "N/A") { %>
         <img src= <%= movie.Poster %> > </li>
     <% } %>
@@ -10,4 +10,4 @@
 </div>
 
 
-<a href="/">Back to Search Page</a>
+<a href="/" style="font-size: 1.5rem">Back to Search Page</a>
